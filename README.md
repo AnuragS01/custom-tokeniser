@@ -5,7 +5,7 @@ A simple Node.js API for encoding and decoding text using a custom, word-level t
 
 ## Features
 - Learns vocabulary from input text (word-level)
-- Assigns random token IDs (1-999) to each word
+- Assigns random token IDs (1-9999) to each word
 - Handles special tokens: `<PAD>`, `<UNK>`, `<BOS>`, `<EOS>`
 - Provides `/encode` and `/decode` API endpoints
 - CORS enabled for all origins

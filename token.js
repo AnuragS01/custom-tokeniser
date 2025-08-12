@@ -24,8 +24,8 @@ export class CustomTokenizer {
     if (!(token in this.vocab)) {
       let id;
       do {
-        // Generate a random integer between 1 and 999 (can be 1, 2, ... 999)
-        id = Math.floor(Math.random() * 999) + 1;
+        // Generate a random integer between 1 and 9999 (can be 1, 2, ... 9999)
+        id = Math.floor(Math.random() * 9999) + 1;
       } while (id in this.invVocab);
       this.vocab[token] = id;
       this.invVocab[id] = token;
