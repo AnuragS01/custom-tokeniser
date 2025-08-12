@@ -68,9 +68,24 @@ Decode:
 curl -X POST http://localhost:3000/decode -H "Content-Type: application/json" -d '{"tokenIds":[...your token ids...]}'
 ```
 
-## Vercel Deployment
-- Project is ready for Vercel deployment with `vercel.json`.
-- Push to your GitHub and connect to Vercel for instant deployment.
+
+### Test the Deployed API on Vercel
+
+You can test the live API deployed on Vercel using the following URL:
+
+**Base URL:** https://custom-tokeniser.vercel.app
+
+#### Encode Example
+```sh
+curl -X POST https://custom-tokeniser.vercel.app/encode -H "Content-Type: application/json" -d '{"text":"hello world"}'
+```
+
+#### Decode Example
+```sh
+curl -X POST https://custom-tokeniser.vercel.app/decode -H "Content-Type: application/json" -d '{"tokenIds":[...your token ids...]}'
+```
+
+Replace `[...your token ids...]` with the array of token IDs you received from the encode endpoint.
 
 
 ## Notes
@@ -79,6 +94,3 @@ curl -X POST http://localhost:3000/decode -H "Content-Type: application/json" -d
 - Tokenization is performed at the word level (splitting on whitespace). Each unique word is assigned a random token ID.
 
 ---
-
-Feel free to open issues or contribute!
-
