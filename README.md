@@ -85,7 +85,13 @@ curl -X POST https://custom-tokeniser.vercel.app/encode -H "Content-Type: applic
 curl -X POST https://custom-tokeniser.vercel.app/decode -H "Content-Type: application/json" -d '{"tokenIds":[...your token ids...]}'
 ```
 
-Replace `[...your token ids...]` with the array of token IDs you received from the encode endpoint.
+
+### Screenshots
+
+Below are screenshots demonstrating the API in action:
+
+![Encode API Screenshot](./Screenshot%202025-08-12%20195720.png)
+![Decode API Screenshot](./Screenshot%202025-08-12%20195801.png)
 
 
 ## Notes
